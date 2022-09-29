@@ -7,10 +7,10 @@ const contatoControl = require('./src/controllers/contatoControl');
 
 const { loginRequired } = require('./src/middlewares/middleware');
 
-//Rotas da Home
+//Rotas de Home
 route.get('/', homeControl.index);
 
-//Rotasd de Login
+//Rotas de Login
 route.get('/login/index', loginControl.index);
 route.post('/login/register', loginControl.register);
 route.post('/login/login', loginControl.login);
